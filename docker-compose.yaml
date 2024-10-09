@@ -1,0 +1,9 @@
+services:
+  morpheus:
+    container_name: morpheus
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    restart: always
